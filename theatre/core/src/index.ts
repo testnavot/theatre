@@ -43,20 +43,3 @@ function registerCoreBundle() {
     }
   }
 
-  const coreBundle = new CoreBundle();
-
-  // @ts-ignore ignore
-  window[globalVariableNames.coreBundle] = coreBundle
-
-  const possibleExistingStudioBundle: undefined | StudioBundle =
-    // @ts-ignore ignore
-    window[globalVariableNames.studioBundle]
-
-  if (
-    possibleExistingStudioBundle &&
-    possibleExistingStudioBundle !== null &&
-    possibleExistingStudioBundle.type === 'Theatre_StudioBundle'
-  ) {
-    possibleExistingStudioBundle.registerCoreBundle(coreBundle)
-  }
-}
