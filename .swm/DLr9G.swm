@@ -1,0 +1,113 @@
+{
+    "id": "DLr9G",
+    "name": "My first Swimm doc",
+    "content": [
+        {
+            "type": "text",
+            "text": "hello this is my first doc, let me explain a few things"
+        },
+        {
+            "type": "image",
+            "src": "https://firebasestorage.googleapis.com/v0/b/swimmio-content/o/repositories%2FZ2l0aHViJTNBJTNBdGhlYXRyZSUzQSUzQXRlc3RuYXZvdA%3D%3D%2F3b9c0eec-7cb9-48ad-a475-47a6fa945418.png?alt=media&token=5d2394db-f8db-4df8-9ccb-b52ee976be01",
+            "width": 50
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " import type StudioBundle from '@theatre/studio/StudioBundle'",
+                " import CoreBundle from './CoreBundle'",
+                " ",
+                "*registerCoreBundle()",
+                " ",
+                " function registerCoreBundle() {",
+                "   if (typeof window == 'undefined') return"
+            ],
+            "firstLineNumber": 16,
+            "path": "theatre/core/src/index.ts",
+            "comments": []
+        },
+        {
+            "type": "text",
+            "text": "There are some snippets here"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "     // @ts-ignore ignore",
+                "     window[globalVariableNames.studioBundle]",
+                " ",
+                "*  if (",
+                "*    possibleExistingStudioBundle &&",
+                "*    possibleExistingStudioBundle !== null &&",
+                "*    possibleExistingStudioBundle.type === 'Theatre_StudioBundle'",
+                "*  ) {",
+                "*    possibleExistingStudioBundle.registerCoreBundle(coreBundle)",
+                "*  }",
+                " }",
+                " "
+            ],
+            "firstLineNumber": 52,
+            "path": "theatre/core/src/index.ts",
+            "comments": [
+                "[[sym-text:possibleExistingStudioBundle(c2dedcf4-bb1d-40f7-b7e8-dc51fda3319c)]] is an important thing for [[sym-text:registerCoreBundle(2ba3324f-1860-4efb-ab98-f70c533e33ea)]]"
+            ]
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "   private _studio: Studio | undefined = undefined",
+                "   constructor() {}",
+                " ",
+                "*  get type(): 'Theatre_CoreBundle' {",
+                "*    return 'Theatre_CoreBundle'",
+                "*  }",
+                "*",
+                "*  get version() {",
+                "*    return process.env.version",
+                "*  }",
+                " ",
+                "   getBitsForStudio(studio: Studio, callback: (bits: CoreBits) => void) {",
+                "     if (this._studio) {"
+            ],
+            "firstLineNumber": 13,
+            "path": "theatre/core/src/CoreBundle.ts",
+            "comments": []
+        }
+    ],
+    "symbols": {
+        "c2dedcf4-bb1d-40f7-b7e8-dc51fda3319c": {
+            "symbol": "c2dedcf4-bb1d-40f7-b7e8-dc51fda3319c",
+            "path": "theatre/core/src/index.ts",
+            "text": "possibleExistingStudioBundle",
+            "lineNumber": 56,
+            "lineData": "    possibleExistingStudioBundle &&",
+            "wordIndex": {
+                "start": 1,
+                "end": 1
+            },
+            "fileBlob": "e2581bd8c6aa3105c61e321daeebda65fb40c2b7",
+            "type": "generic_text"
+        },
+        "2ba3324f-1860-4efb-ab98-f70c533e33ea": {
+            "symbol": "2ba3324f-1860-4efb-ab98-f70c533e33ea",
+            "path": "theatre/core/src/index.ts",
+            "text": "registerCoreBundle",
+            "lineNumber": 19,
+            "lineData": "registerCoreBundle()",
+            "wordIndex": {
+                "start": 0,
+                "end": 0
+            },
+            "fileBlob": "e2581bd8c6aa3105c61e321daeebda65fb40c2b7",
+            "type": "generic_text"
+        }
+    },
+    "file_version": "2.0.3",
+    "meta": {
+        "app_version": "0.5.9-0",
+        "file_blobs": {
+            "theatre/core/src/index.ts": "e2581bd8c6aa3105c61e321daeebda65fb40c2b7",
+            "theatre/core/src/CoreBundle.ts": "47cd9482c986b6df11b92cdb72629e34b41546e8"
+        }
+    }
+}
