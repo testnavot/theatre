@@ -43,7 +43,7 @@ function registerCoreBundle() {
     }
   }
 
-  const coreBundle = new CoreBundle()
+  const coreBundle = new CoreBundle();
 
   // @ts-ignore ignore
   window[globalVariableNames.coreBundle] = coreBundle
